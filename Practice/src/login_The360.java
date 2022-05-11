@@ -38,7 +38,7 @@ public class login_The360 {
 	/*
 	 * System.setProperty("webdriver.chrome.driver","D:\\Drivers\\chromedriver.exe")
 	 * ; WebDriver driver = new ChromeDriver(); driver.get("https://gmail.com/");
-	 * driver.manage().window().maximize();
+	 * 
 	 */
 
     }
