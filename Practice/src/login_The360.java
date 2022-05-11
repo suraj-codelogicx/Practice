@@ -28,7 +28,7 @@ public class login_The360 {
 	// search_bar = driver.find_element_by_id("input-28");
 	// Quit from the browser.
 	driver.close();
-	// driver.quit();
+	driver.quit();
 	/*
 	 * public boolean verifySignInPageTitle() { String expectedTitle =
 	 * "Sign in - Google Accounts"; return
