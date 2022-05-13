@@ -3,6 +3,9 @@ package testCase_Secqurnyx;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
+import target_Web_Page.AddUserPage;
+import target_Web_Page.;
+
 public void Property() throws InterruptedException {
 	//launch browser
 	
