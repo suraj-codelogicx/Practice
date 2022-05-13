@@ -6,14 +6,12 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
 import browserDriver.BrowserFactory;
-import target_Web_Page.AddUserPage;
 import target_Web_Page.LoginPage;
-import target_Web_Page.PropertyPage;
 
-public class AddUserTest {
+public class LoginTest {
 
     @Test(groups = { "sanity" })
-    public void Property() throws InterruptedException {
+    public void checkLogin() throws InterruptedException {
 	// launch browser
 
 	WebDriver driver = BrowserFactory.startBrowser("chrome", "https://dev.the360.in/login");
@@ -23,16 +21,11 @@ public class AddUserTest {
 	// call the method
 	login_page.login_to_360("securnyx360@aol.com", "The360@2022");
 
-	PropertyPage property_page = PageFactory.initElements(driver, PropertyPage.class);
-	property_page.proprty_test();
-
-	AddUserPage add_user_page = PageFactory.initElements(driver, AddUserPage.class);
-	add_user_page.addUserTest();
-
     }
 
     @AfterMethod(alwaysRun = true)
     public void teardown() {
 	BrowserFactory.quit();
     }
+
 }

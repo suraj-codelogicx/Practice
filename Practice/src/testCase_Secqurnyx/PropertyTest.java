@@ -6,11 +6,10 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
 import browserDriver.BrowserFactory;
-import target_Web_Page.AddUserPage;
 import target_Web_Page.LoginPage;
 import target_Web_Page.PropertyPage;
 
-public class AddUserTest {
+public class PropertyTest {
 
     @Test(groups = { "sanity" })
     public void Property() throws InterruptedException {
@@ -26,13 +25,11 @@ public class AddUserTest {
 	PropertyPage property_page = PageFactory.initElements(driver, PropertyPage.class);
 	property_page.proprty_test();
 
-	AddUserPage add_user_page = PageFactory.initElements(driver, AddUserPage.class);
-	add_user_page.addUserTest();
-
     }
 
     @AfterMethod(alwaysRun = true)
     public void teardown() {
 	BrowserFactory.quit();
     }
+
 }

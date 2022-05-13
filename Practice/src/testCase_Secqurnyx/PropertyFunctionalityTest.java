@@ -6,11 +6,11 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
 import browserDriver.BrowserFactory;
-import target_Web_Page.AddUserPage;
 import target_Web_Page.LoginPage;
+import target_Web_Page.PropertyFunctionalityPage;
 import target_Web_Page.PropertyPage;
 
-public class AddUserTest {
+public class PropertyFunctionalityTest {
 
     @Test(groups = { "sanity" })
     public void Property() throws InterruptedException {
@@ -26,8 +26,8 @@ public class AddUserTest {
 	PropertyPage property_page = PageFactory.initElements(driver, PropertyPage.class);
 	property_page.proprty_test();
 
-	AddUserPage add_user_page = PageFactory.initElements(driver, AddUserPage.class);
-	add_user_page.addUserTest();
+	PropertyFunctionalityPage pf_page = PageFactory.initElements(driver, PropertyFunctionalityPage.class);
+	pf_page.proprty_functionality_test();
 
     }
 
@@ -35,4 +35,5 @@ public class AddUserTest {
     public void teardown() {
 	BrowserFactory.quit();
     }
+
 }
