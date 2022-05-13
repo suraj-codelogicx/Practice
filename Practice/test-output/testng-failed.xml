@@ -3,12 +3,12 @@
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
     <classes>
-      <class name="testCase_Secqurnyx.AddUserTest">
+      <class name="testCase_Secqurnyx.LoginTest">
         <methods>
           <include name="teardown"/>
-          <include name="Property"/>
+          <include name="checkLogin"/>
         </methods>
-      </class> <!-- testCase_Secqurnyx.AddUserTest -->
+      </class> <!-- testCase_Secqurnyx.LoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
