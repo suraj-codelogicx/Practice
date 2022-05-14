@@ -15,6 +15,10 @@ public class LoginTest {
 	// launch browser
 
 	WebDriver driver = BrowserFactory.startBrowser("chrome", "https://dev.the360.in/login");
+	/*
+	 * String log4jConfPath = "/path/to/log4j.properties";
+	 * PropertyConfigurator.configure(log4jConfPath);
+	 */
 
 	// created page object using page factory
 	LoginPage login_page = PageFactory.initElements(driver, LoginPage.class);
