@@ -20,26 +20,9 @@ public class login_The360 {
 	// LOGIN field
 	driver.findElement(By.xpath("//button[@type='submit']")).click();
 	Thread.sleep(3000);
-
-	/*
-	 * try { Thread.sleep(100); } catch (InterruptedException e) {
-	 * e.printStackTrace(); }
-	 */
-
-	// search_bar = driver.find_element_by_id("input-28");
 	// Quit from the browser.
 	// driver.close();
 	driver.quit();
-	/*
-	 * public boolean verifySignInPageTitle() { String expectedTitle =
-	 * "Sign in - Google Accounts"; return
-	 * getSignInPageTitle().contains(expectedTitle }
-	 */
-	/*
-	 * System.setProperty("webdriver.chrome.driver","D:\\Drivers\\chromedriver.exe")
-	 * ; WebDriver driver = new ChromeDriver(); driver.get("https://gmail.com/");
-	 * 
-	 */
 
     }
 
