@@ -10,7 +10,6 @@ public class AddUserPage {
 	// launching the specified URL
 	driver.get("https://dev.the360.in/login");
 	driver.manage().window().maximize();
-	// driver.findElement(By.id("input-28"));
 	// User Name field
 	driver.findElement(By.xpath("(//input[@type='text'])[2]")).sendKeys("surajbiswas@yopmail.com");
 	// Password field
@@ -20,10 +19,9 @@ public class AddUserPage {
 	// LOGIN field
 	driver.findElement(By.xpath("//button[@type='submit']")).click();
 	Thread.sleep(3000);
-	driver.findElement(By
-		.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/header[1]/nav[1]/div[1]/div[3]/ul[1]/li[1]/a[1]"))
-		.click();
+	driver.findElement(By.xpath("//button[@class='btn btn-success btn-table-header pull-right']")).click();
 	Thread.sleep(1000);
+
 	driver.quit();
 
     }
