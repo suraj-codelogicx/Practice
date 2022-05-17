@@ -22,7 +22,8 @@ public class AddUserPage {
 	driver.findElement(By.xpath("//button[@class='btn btn-success btn-table-header pull-right']")).click();
 	Thread.sleep(1000);
 
-	driver.quit();
+	// driver.quit();
+	driver.close();
 
     }
 
