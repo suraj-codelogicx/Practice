@@ -24,6 +24,8 @@ public class AddUserPage {
 		.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/header[1]/nav[1]/div[1]/div[3]/ul[1]/li[1]/a[1]"))
 		.click();
 	Thread.sleep(1000);
+	driver.quit();
+
     }
 
 }
