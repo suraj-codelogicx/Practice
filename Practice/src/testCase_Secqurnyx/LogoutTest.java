@@ -24,6 +24,7 @@ public class LogoutTest {
 
 	LogoutPage logout_page = PageFactory.initElements(driver, LogoutPage.class);
 	logout_page.logout_to_360();
+	driver.getTitle();
 
     }
 
