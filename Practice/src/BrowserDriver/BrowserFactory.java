@@ -41,8 +41,4 @@ public class BrowserFactory {
 	driver = null; // we destroy the driver object after quit operation
     }
 
-    public static void close() {
-	driver.close();
-	driver = null; // we destroy the driver object after quit operation
-    }
 }
