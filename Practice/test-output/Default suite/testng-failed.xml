@@ -3,12 +3,12 @@
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
     <classes>
-      <class name="testase_360.LoginTest">
+      <class name="testase_360.LogoutTest">
         <methods>
-          <include name="checkLogin"/>
           <include name="teardown"/>
+          <include name="checkLogin"/>
         </methods>
-      </class> <!-- testase_360.LoginTest -->
+      </class> <!-- testase_360.LogoutTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
