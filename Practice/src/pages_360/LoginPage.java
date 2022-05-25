@@ -11,7 +11,7 @@ public class LoginPage {
 
     WebDriver driver;
 
-    public LoginPage(WebDriver ldriver) {
+    public void Login(WebDriver ldriver) {
 	this.driver = ldriver;
     }
 

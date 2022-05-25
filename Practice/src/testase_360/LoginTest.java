@@ -25,7 +25,7 @@ public class LoginTest {
 
     @AfterMethod(alwaysRun = true)
     public void teardown() {
-	BrowserFactory.close();
+	BrowserFactory.quit();
     }
 
 }

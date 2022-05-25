@@ -6,15 +6,13 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeSuite;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BrowserFactory {
+
     public static WebDriver driver;
 
-    @BeforeSuite
     public static WebDriver startBrowser(String browserName, String url) {
 
 	if (browserName.equalsIgnoreCase("firefox")) {
@@ -39,16 +37,13 @@ public class BrowserFactory {
 
     }
 
-    @AfterSuite
-    public void tearDown() {
-
-	driver.close(); // we destroy the driver object after close operation
-	// driver.quit(); // we destroy the driver object after quit operation
+    public static void quit() {
+	driver.quit();
+	driver = null; // we destroy the driver object after quit operation
     }
 
     public static void close() {
 	driver.close();
-
+	driver = null; // we destroy the driver object after quit operation
     }
-
 }
