@@ -5,7 +5,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
-import browserDriver.BrowserFactory;
+import helper.BrowserFactory;
 import target_Web_Page.LoginPage;
 import target_Web_Page.LogoutPage;
 

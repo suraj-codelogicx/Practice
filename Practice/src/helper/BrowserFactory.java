@@ -1,4 +1,4 @@
-package browserDriver;
+package helper;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -10,6 +10,7 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BrowserFactory {
+
     public static WebDriver driver;
 
     public static WebDriver startBrowser(String browserName, String url) {
@@ -20,7 +21,7 @@ public class BrowserFactory {
 	} else if (browserName.equalsIgnoreCase("chrome")) {
 	    WebDriverManager.chromedriver().setup();
 	    ChromeOptions options = new ChromeOptions();
-	    options.addArguments("--disable-notifications");
+	    // options.addArguments("--disable-notifications");
 	    driver = new ChromeDriver(options);
 	} else if (browserName.equalsIgnoreCase("IE")) {
 	    WebDriverManager.iedriver().setup();
